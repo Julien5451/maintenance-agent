@@ -1,0 +1,35 @@
+{
+  "timestamp": "2026-10-30T12:15:43.598755+00:00",
+  "kind": "real_model_tool_call_probe",
+  "simulated_business_data": true,
+  "status": "passed",
+  "model_calls": 1,
+  "tool_calls": 1,
+  "checks": {
+    "no_invalid_tool_calls": true,
+    "one_tool_call": true,
+    "lookup_asset_called": true,
+    "correct_query": true,
+    "catalog_result_correct": true
+  },
+  "configuration_present": {
+    "LLM_MODEL": true,
+    "LLM_BASE_URL": true,
+    "LLM_API_KEY": true
+  },
+  "model": "gpt-4o-mini",
+  "tool": {
+    "name": "lookup_asset",
+    "arguments": {
+      "query": "EQ-001"
+    },
+    "result_summary": {
+      "count": 1,
+      "asset_ids": [
+        "EQ-001"
+      ],
+      "simulated": true
+    }
+  },
+  "elapsed_seconds": 5.83
+}

@@ -1,0 +1,5 @@
+[
+  {"team_id":"T-MECH","name":"机械维修班组"},
+  {"team_id":"T-ELEC","name":"电气维修班组"},
+  {"team_id":"T-CTRL","name":"自动化班组"}
+]

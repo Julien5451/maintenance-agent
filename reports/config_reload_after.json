@@ -1,0 +1,34 @@
+{
+  "business.sqlite": {
+    "drafts": {
+      "content_sha256": "149a89a1cdc9b8cb31ecc3928900c95e75cd3f700d33a90a85ac54e5a26f424a",
+      "rows": 2
+    },
+    "events": {
+      "content_sha256": "983fd416200da48894de77536e47ee37cf5a97f235b6f89751ca7ec32932f0dc",
+      "rows": 22
+    },
+    "sqlite_sequence": {
+      "content_sha256": "48b7a6b4307de96531cbe0662628b952c4dadd119f35e50f10dec4e38adc2c93",
+      "rows": 1
+    },
+    "tasks": {
+      "content_sha256": "e05f2fe8ac8313367833ba5128c5b6182a10456d511355505b87d9de11ee1e76",
+      "rows": 2
+    },
+    "work_orders": {
+      "content_sha256": "075d7a5b9e005b7cabd4dd5142477f91188d5f4a3f6abb900b3143be4499b1cf",
+      "rows": 1
+    }
+  },
+  "checkpoints.sqlite": {
+    "checkpoints": {
+      "content_sha256": "7ac9bfa98f0baee9af872794490ed1f8669b278d6bb5049ad3d51a7199a959c3",
+      "rows": 19
+    },
+    "writes": {
+      "content_sha256": "b8b8f1aa0bbb396c53be2e0fb0466887fe02c94094c68c3a6109fb09312feab3",
+      "rows": 93
+    }
+  }
+}

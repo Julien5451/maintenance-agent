@@ -1,0 +1,23 @@
+.env
+.env.*
+!.env.example
+.venv/
+__pycache__/
+.pytest_cache/
+.ruff_cache/
+*.pyc
+*.db
+*.db-*
+*.sqlite*
+runtime/
+!runtime/.gitkeep
+reports/eval-runtime/
+reports/mock-runtime/
+# Generated machine-local proxy topology and live counters; keep sanitized reports.
+reports/network_fix_topology.json
+reports/network_fix_relay_stats.json
+*.log
+*.tmp
+*.swp
+.DS_Store
+Thumbs.db

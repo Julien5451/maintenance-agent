@@ -1,0 +1,24 @@
+{
+  "kind": "container_network_diagnosis",
+  "scheme": "https",
+  "endpoint_is_loopback": false,
+  "proxy_environment_present": false,
+  "dns_ok": true,
+  "status": "failed",
+  "failed_stage": "tcp",
+  "error_type": "OSError",
+  "errno": 101,
+  "address_family_checks": [
+    {
+      "family": "AF_INET",
+      "tcp_ok": false,
+      "error_type": "TimeoutError"
+    },
+    {
+      "family": "AF_INET6",
+      "tcp_ok": false,
+      "error_type": "OSError",
+      "errno": 101
+    }
+  ]
+}

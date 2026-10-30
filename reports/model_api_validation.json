@@ -1,0 +1,115 @@
+{
+  "timestamp": "2026-10-30T12:28:49.701834+00:00",
+  "model": "gpt-4o-mini",
+  "new_api_key_created": false,
+  "configuration_migration": {
+    "timestamp": "2026-10-30T12:08:36.025838+00:00",
+    "status": "passed",
+    "mapping": {
+      "CHAT_MODEL": "LLM_MODEL",
+      "CHAT_BASE_URL": "LLM_BASE_URL",
+      "CHAT_API_KEY": "LLM_API_KEY"
+    },
+    "other_settings_unchanged": true,
+    "source_file_unchanged": true,
+    "mapped_values_verified": true
+  },
+  "database_contents_identical_after_reload_and_probes": true,
+  "host_probe": {
+    "timestamp": "2026-10-30T12:15:43.598755+00:00",
+    "kind": "real_model_tool_call_probe",
+    "simulated_business_data": true,
+    "status": "passed",
+    "model_calls": 1,
+    "tool_calls": 1,
+    "checks": {
+      "no_invalid_tool_calls": true,
+      "one_tool_call": true,
+      "lookup_asset_called": true,
+      "correct_query": true,
+      "catalog_result_correct": true
+    },
+    "configuration_present": {
+      "LLM_MODEL": true,
+      "LLM_BASE_URL": true,
+      "LLM_API_KEY": true
+    },
+    "model": "gpt-4o-mini",
+    "tool": {
+      "name": "lookup_asset",
+      "arguments": {
+        "query": "EQ-001"
+      },
+      "result_summary": {
+        "count": 1,
+        "asset_ids": [
+          "EQ-001"
+        ],
+        "simulated": true
+      }
+    },
+    "elapsed_seconds": 5.83
+  },
+  "evaluation_report": "reports/real_eval/20261030T121646787416Z.json",
+  "evaluation_summary": {
+    "total": 12,
+    "passed": 6,
+    "failed": 6,
+    "blocked": 0,
+    "model_calls": 37,
+    "tool_calls": 45,
+    "elapsed_seconds": 52.827
+  },
+  "model_request_statistics": {
+    "attempts": 37,
+    "successful_responses": 37,
+    "errors": 0
+  },
+  "container_probe": {
+    "timestamp": "2026-10-30T12:18:31.840039+00:00",
+    "kind": "running_container_model_probe",
+    "simulated_business_data": true,
+    "model_calls": 1,
+    "database_writes": 0,
+    "status": "failed",
+    "diagnostic": {
+      "category": "network",
+      "reason": "无法连接模型服务，请检查网络、代理、DNS 与 TLS。",
+      "error_type": "OpenAIConnectionError",
+      "network_subtype": "connection"
+    },
+    "elapsed_seconds": 45.314
+  },
+  "container_network": {
+    "kind": "container_network_diagnosis",
+    "scheme": "https",
+    "endpoint_is_loopback": false,
+    "proxy_environment_present": false,
+    "dns_ok": true,
+    "status": "failed",
+    "failed_stage": "tcp",
+    "error_type": "OSError",
+    "errno": 101,
+    "address_family_checks": [
+      {
+        "family": "AF_INET",
+        "tcp_ok": false,
+        "error_type": "TimeoutError"
+      },
+      {
+        "family": "AF_INET6",
+        "tcp_ok": false,
+        "error_type": "OSError",
+        "errno": 101
+      }
+    ]
+  },
+  "host_proxy_environment_present": true,
+  "endpoint_matches_host_no_proxy": false,
+  "secret_scan": {
+    "checked_files": 62,
+    "secret_found_outside_env": false,
+    "matching_paths": []
+  },
+  "frozen_cases_sha256": "4de390acedbff199adc717f76e35e93915323971b8698b1185126e82afa6d849"
+}

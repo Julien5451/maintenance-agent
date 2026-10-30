@@ -1,0 +1,12 @@
+{
+  "timestamp": "2026-10-30T13:30:05.288649+00:00",
+  "kind": "container_internal_http_routing",
+  "checks": {
+    "api_internal_api_http_200": true,
+    "ui_internal_api_http_200": true,
+    "internal_traffic_not_relayed": true
+  },
+  "status": "passed",
+  "model_calls": 0,
+  "database_writes": 0
+}

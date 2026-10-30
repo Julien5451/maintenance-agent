@@ -1,0 +1,12 @@
+[
+  {"asset_id":"EQ-001","name":"1号数控车床","aliases":["数控车床","1号车床","一号车床"],"location":"A车间1号工位","asset_type":"lathe","team_ids":["T-MECH","T-ELEC","T-CTRL"]},
+  {"asset_id":"EQ-002","name":"2号数控车床","aliases":["数控车床","2号车床","二号车床"],"location":"A车间2号工位","asset_type":"lathe","team_ids":["T-MECH","T-ELEC","T-CTRL"]},
+  {"asset_id":"EQ-003","name":"1号输送机","aliases":["输送机","传送带","1号传送带"],"location":"A车间装配线","asset_type":"conveyor","team_ids":["T-MECH","T-ELEC","T-CTRL"]},
+  {"asset_id":"EQ-004","name":"1号空压机","aliases":["空压机","空气压缩机"],"location":"动力站1号机位","asset_type":"compressor","team_ids":["T-MECH","T-ELEC","T-CTRL"]},
+  {"asset_id":"EQ-005","name":"1号冲压机","aliases":["冲压机","冲床"],"location":"B车间冲压区","asset_type":"press","team_ids":["T-MECH","T-ELEC","T-CTRL"]},
+  {"asset_id":"EQ-006","name":"1号装配机器人","aliases":["装配机器人","机器人"],"location":"B车间装配区","asset_type":"robot","team_ids":["T-MECH","T-ELEC","T-CTRL"]},
+  {"asset_id":"EQ-007","name":"1号循环泵","aliases":["循环泵","水泵"],"location":"公用工程泵房","asset_type":"pump","team_ids":["T-MECH","T-ELEC","T-CTRL"]},
+  {"asset_id":"EQ-008","name":"1号排风机","aliases":["排风机","风机"],"location":"B车间通风区","asset_type":"fan","team_ids":["T-MECH","T-ELEC","T-CTRL"]},
+  {"asset_id":"EQ-009","name":"1号热处理炉","aliases":["热处理炉","加热炉"],"location":"C车间热处理区","asset_type":"furnace","team_ids":["T-MECH","T-ELEC","T-CTRL"]},
+  {"asset_id":"EQ-010","name":"1号包装机","aliases":["包装机","自动包装机"],"location":"C车间包装线","asset_type":"packaging","team_ids":["T-MECH","T-ELEC","T-CTRL"]}
+]

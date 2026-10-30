@@ -1,0 +1,13 @@
+{
+  "timestamp": "2026-10-30T13:42:23.669797+00:00",
+  "model": "gpt-4o-mini",
+  "model_configuration_still_matches_authorized_rag_source": true,
+  "frozen_original_cases_sha256": "4de390acedbff199adc717f76e35e93915323971b8698b1185126e82afa6d849",
+  "frozen_generalization_cases_sha256": "a3f44bb06bbc3df4010abf614cdc929fd586eddadb9eb83a0e49fa67b0a25837",
+  "host_source_sha256": "4fcf7d961fb7ccdb6ba079430e61fe3fbac13db9ce493cc0f5ebf200f7085335",
+  "container_source_sha256": "4fcf7d961fb7ccdb6ba079430e61fe3fbac13db9ce493cc0f5ebf200f7085335",
+  "public_text_files_checked": 105,
+  "credential_matching_paths": [],
+  "host_and_container_sources_identical": true,
+  "status": "passed"
+}

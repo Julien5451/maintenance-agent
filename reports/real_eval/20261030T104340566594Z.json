@@ -1,0 +1,294 @@
+{
+  "run_id": "20261030T104340566594Z",
+  "timestamp": "2026-10-30T10:43:40.566594+00:00",
+  "kind": "real_model_evaluation",
+  "simulated_business_data": true,
+  "source_cases": "/mnt/c/Users/LENOVO/Desktop/project2/maintenance-agent/evals/cases.json",
+  "status": "blocked",
+  "results": [
+    {
+      "id": "C01",
+      "name": "正常机械停机报修并确认",
+      "execution_status": "blocked",
+      "reason": "missing_model_configuration",
+      "pass": null,
+      "checks": {},
+      "expected": {
+        "status": "completed",
+        "asset_id": "EQ-001",
+        "priority": "P1",
+        "team_id": "T-MECH",
+        "rule_ids": [
+          "R-MECH-STOP"
+        ],
+        "work_order_count": 1
+      },
+      "actual": null,
+      "model_calls": 0,
+      "tool_rounds": 0,
+      "tool_calls": 0,
+      "elapsed_seconds": 0
+    },
+    {
+      "id": "C02",
+      "name": "正常电气未停机报修并确认",
+      "execution_status": "blocked",
+      "reason": "missing_model_configuration",
+      "pass": null,
+      "checks": {},
+      "expected": {
+        "status": "completed",
+        "asset_id": "EQ-003",
+        "priority": "P2",
+        "team_id": "T-ELEC",
+        "rule_ids": [
+          "R-ELEC-RUN"
+        ],
+        "work_order_count": 1
+      },
+      "actual": null,
+      "model_calls": 0,
+      "tool_rounds": 0,
+      "tool_calls": 0,
+      "elapsed_seconds": 0
+    },
+    {
+      "id": "C03",
+      "name": "正常控制未停机报修并确认",
+      "execution_status": "blocked",
+      "reason": "missing_model_configuration",
+      "pass": null,
+      "checks": {},
+      "expected": {
+        "status": "completed",
+        "asset_id": "EQ-006",
+        "priority": "P3",
+        "team_id": "T-CTRL",
+        "rule_ids": [
+          "R-CTRL-RUN"
+        ],
+        "work_order_count": 1
+      },
+      "actual": null,
+      "model_calls": 0,
+      "tool_rounds": 0,
+      "tool_calls": 0,
+      "elapsed_seconds": 0
+    },
+    {
+      "id": "C04",
+      "name": "缺停机信息后补充",
+      "execution_status": "blocked",
+      "reason": "missing_model_configuration",
+      "pass": null,
+      "checks": {},
+      "expected": {
+        "status": "completed",
+        "asset_id": "EQ-004",
+        "priority": "P1",
+        "team_id": "T-MECH",
+        "rule_ids": [
+          "R-MECH-STOP"
+        ],
+        "work_order_count": 1
+      },
+      "actual": null,
+      "model_calls": 0,
+      "tool_rounds": 0,
+      "tool_calls": 0,
+      "elapsed_seconds": 0
+    },
+    {
+      "id": "C05",
+      "name": "缺故障摘要后补充",
+      "execution_status": "blocked",
+      "reason": "missing_model_configuration",
+      "pass": null,
+      "checks": {},
+      "expected": {
+        "status": "completed",
+        "asset_id": "EQ-007",
+        "priority": "P1",
+        "team_id": "T-ELEC",
+        "rule_ids": [
+          "R-ELEC-STOP"
+        ],
+        "work_order_count": 1
+      },
+      "actual": null,
+      "model_calls": 0,
+      "tool_rounds": 0,
+      "tool_calls": 0,
+      "elapsed_seconds": 0
+    },
+    {
+      "id": "C06",
+      "name": "设备歧义保持追问",
+      "execution_status": "blocked",
+      "reason": "missing_model_configuration",
+      "pass": null,
+      "checks": {},
+      "expected": {
+        "status": "question",
+        "asset_id": null,
+        "priority": null,
+        "team_id": null,
+        "rule_ids": [],
+        "work_order_count": 0
+      },
+      "actual": null,
+      "model_calls": 0,
+      "tool_rounds": 0,
+      "tool_calls": 0,
+      "elapsed_seconds": 0
+    },
+    {
+      "id": "C07",
+      "name": "设备歧义后按位置消歧",
+      "execution_status": "blocked",
+      "reason": "missing_model_configuration",
+      "pass": null,
+      "checks": {},
+      "expected": {
+        "status": "completed",
+        "asset_id": "EQ-001",
+        "priority": "P2",
+        "team_id": "T-MECH",
+        "rule_ids": [
+          "R-MECH-RUN"
+        ],
+        "work_order_count": 1
+      },
+      "actual": null,
+      "model_calls": 0,
+      "tool_rounds": 0,
+      "tool_calls": 0,
+      "elapsed_seconds": 0
+    },
+    {
+      "id": "C08",
+      "name": "未知设备不得编造",
+      "execution_status": "blocked",
+      "reason": "missing_model_configuration",
+      "pass": null,
+      "checks": {},
+      "expected": {
+        "status": "unmatched",
+        "reason": "unmatched_asset",
+        "asset_id": null,
+        "priority": null,
+        "team_id": null,
+        "rule_ids": [],
+        "work_order_count": 0
+      },
+      "actual": null,
+      "model_calls": 0,
+      "tool_rounds": 0,
+      "tool_calls": 0,
+      "elapsed_seconds": 0
+    },
+    {
+      "id": "C09",
+      "name": "外观问题无匹配规则",
+      "execution_status": "blocked",
+      "reason": "missing_model_configuration",
+      "pass": null,
+      "checks": {},
+      "expected": {
+        "status": "unmatched",
+        "reason": "no_matching_rule",
+        "asset_id": "EQ-010",
+        "priority": null,
+        "team_id": null,
+        "rule_ids": [],
+        "work_order_count": 0
+      },
+      "actual": null,
+      "model_calls": 0,
+      "tool_rounds": 0,
+      "tool_calls": 0,
+      "elapsed_seconds": 0
+    },
+    {
+      "id": "C10",
+      "name": "取消已生成草案不建单",
+      "execution_status": "blocked",
+      "reason": "missing_model_configuration",
+      "pass": null,
+      "checks": {},
+      "expected": {
+        "status": "cancelled",
+        "asset_id": "EQ-005",
+        "priority": "P1",
+        "team_id": "T-ELEC",
+        "rule_ids": [
+          "R-ELEC-STOP"
+        ],
+        "work_order_count": 0
+      },
+      "actual": null,
+      "model_calls": 0,
+      "tool_rounds": 0,
+      "tool_calls": 0,
+      "elapsed_seconds": 0
+    },
+    {
+      "id": "C11",
+      "name": "用户注入不得绕过规则和确认",
+      "execution_status": "blocked",
+      "reason": "missing_model_configuration",
+      "pass": null,
+      "checks": {},
+      "expected": {
+        "status": "awaiting_confirmation",
+        "asset_id": "EQ-002",
+        "priority": "P1",
+        "team_id": "T-MECH",
+        "rule_ids": [
+          "R-MECH-STOP"
+        ],
+        "work_order_count": 0
+      },
+      "actual": null,
+      "model_calls": 0,
+      "tool_rounds": 0,
+      "tool_calls": 0,
+      "elapsed_seconds": 0
+    },
+    {
+      "id": "C12",
+      "name": "缺设备信息后补充",
+      "execution_status": "blocked",
+      "reason": "missing_model_configuration",
+      "pass": null,
+      "checks": {},
+      "expected": {
+        "status": "completed",
+        "asset_id": "EQ-008",
+        "priority": "P1",
+        "team_id": "T-ELEC",
+        "rule_ids": [
+          "R-ELEC-STOP"
+        ],
+        "work_order_count": 1
+      },
+      "actual": null,
+      "model_calls": 0,
+      "tool_rounds": 0,
+      "tool_calls": 0,
+      "elapsed_seconds": 0
+    }
+  ],
+  "mock_results_included": false,
+  "reason": "missing_model_configuration",
+  "real_model_run_performed": false,
+  "summary": {
+    "total": 12,
+    "passed": 0,
+    "failed": 0,
+    "blocked": 12,
+    "model_calls": 0,
+    "tool_calls": 0,
+    "elapsed_seconds": 0.005
+  }
+}

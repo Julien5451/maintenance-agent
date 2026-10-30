@@ -1,0 +1,1018 @@
+{
+  "timestamp": "2026-10-30T13:29:46.738768+00:00",
+  "run_id": "20261030T132946738768Z",
+  "kind": "container_real_http_business_validation",
+  "model_mode": "real_api",
+  "simulated_business_data": true,
+  "status": "passed",
+  "results": [
+    {
+      "scenario": "normal_confirm",
+      "input": "【容器真实测试：正常；模拟数据】EQ-001 机械轴承异响，已经停机。",
+      "checks": {
+        "unapproved_no_order": true,
+        "valid_draft_reached": true,
+        "completed": true,
+        "stored_order_matches_saved_draft": true,
+        "repeat_confirmation_one_order": true,
+        "human_execution_no_model_call": true,
+        "at_most_six_rounds": true
+      },
+      "status": "passed",
+      "task_id": "1634812f706b4811a1c5fc0628c613e3",
+      "initial_status": "awaiting_confirmation",
+      "actual": {
+        "task_id": "1634812f706b4811a1c5fc0628c613e3",
+        "simulated": true,
+        "status": "completed",
+        "question": null,
+        "reason": null,
+        "draft": {
+          "asset_id": "EQ-001",
+          "fault_summary": "【容器真实测试：正常；模拟数据】EQ-001 机械轴承异响，已经停机",
+          "stopped": true,
+          "category": "mechanical",
+          "draft_id": "7cbdccf73dffaf6f3b9d7f03ef50a28cff2e8de45993a9bd57c1d5cf2d575be5",
+          "location": "A车间1号工位",
+          "priority": "P1",
+          "team_id": "T-MECH",
+          "rule_ids": [
+            "R-MECH-STOP"
+          ]
+        },
+        "work_order": {
+          "order_id": "WO-D791E4E3F144",
+          "request_key": "1634812f706b4811a1c5fc0628c613e3",
+          "draft_id": "7cbdccf73dffaf6f3b9d7f03ef50a28cff2e8de45993a9bd57c1d5cf2d575be5",
+          "payload": {
+            "asset_id": "EQ-001",
+            "fault_summary": "【容器真实测试：正常；模拟数据】EQ-001 机械轴承异响，已经停机",
+            "stopped": true,
+            "category": "mechanical",
+            "draft_id": "7cbdccf73dffaf6f3b9d7f03ef50a28cff2e8de45993a9bd57c1d5cf2d575be5",
+            "location": "A车间1号工位",
+            "priority": "P1",
+            "team_id": "T-MECH",
+            "rule_ids": [
+              "R-MECH-STOP"
+            ]
+          },
+          "created_at": "2026-10-30T13:29:52.597126+00:00",
+          "simulated": true
+        },
+        "tool_rounds": 3,
+        "model_calls": 3,
+        "facts": {
+          "identity_query": "EQ-001",
+          "fault_summary": "【容器真实测试：正常；模拟数据】EQ-001 机械轴承异响，已经停机",
+          "stopped": true,
+          "stopped_conflict": false,
+          "evidence": {
+            "identity": {
+              "message": 1,
+              "quote": "【容器真实测试：正常；模拟数据】EQ-001 机械轴承异响，已经停机。"
+            },
+            "stopped": {
+              "message": 1,
+              "quote": "已经停机"
+            },
+            "fault_summary": {
+              "message": 1,
+              "quotes": [
+                "【容器真实测试：正常",
+                "模拟数据】EQ-001 机械轴承异响，已经停机"
+              ]
+            }
+          },
+          "user_message_count": 1
+        },
+        "missing_fields": [],
+        "rule_evidence": [
+          {
+            "rule_id": "R-MECH-STOP",
+            "name": "机械故障且已停机：一级派机械班",
+            "category": "mechanical",
+            "asset_types": [
+              "lathe",
+              "conveyor",
+              "compressor",
+              "press",
+              "robot",
+              "pump",
+              "fan",
+              "furnace",
+              "packaging"
+            ],
+            "stopped": true,
+            "priority": "P1",
+            "team_id": "T-MECH"
+          }
+        ],
+        "events": [
+          {
+            "seq": 23,
+            "created_at": "2026-10-30T13:29:47.713841+00:00",
+            "event_type": "status_change",
+            "simulated": true,
+            "previous": null,
+            "status": "running"
+          },
+          {
+            "seq": 24,
+            "created_at": "2026-10-30T13:29:47.733097+00:00",
+            "event_type": "fact_update",
+            "simulated": true,
+            "status": "ok",
+            "facts": {
+              "identity_query": "EQ-001",
+              "fault_summary": "【容器真实测试：正常；模拟数据】EQ-001 机械轴承异响，已经停机",
+              "stopped": true,
+              "stopped_conflict": false,
+              "evidence": {
+                "identity": {
+                  "message": 1,
+                  "quote": "【容器真实测试：正常；模拟数据】EQ-001 机械轴承异响，已经停机。"
+                },
+                "stopped": {
+                  "message": 1,
+                  "quote": "已经停机"
+                },
+                "fault_summary": {
+                  "message": 1,
+                  "quotes": [
+                    "【容器真实测试：正常",
+                    "模拟数据】EQ-001 机械轴承异响，已经停机"
+                  ]
+                }
+              },
+              "user_message_count": 1
+            },
+            "device_revalidation": false,
+            "rules_invalidated": true
+          },
+          {
+            "seq": 25,
+            "created_at": "2026-10-30T13:29:49.793026+00:00",
+            "event_type": "model_call",
+            "simulated": true,
+            "status": "ok",
+            "elapsed_ms": 2053
+          },
+          {
+            "seq": 26,
+            "created_at": "2026-10-30T13:29:49.800046+00:00",
+            "event_type": "tool_call",
+            "simulated": true,
+            "tool_name": "lookup_asset",
+            "args": {
+              "query": "EQ-001"
+            },
+            "result_summary": "{\"simulated\": true, \"status\": \"found\", \"reason\": \"exact_asset_id\", \"matches\": [{\"asset_id\": \"EQ-001\", \"name\": \"1号数控车床\", \"aliases\": [\"数控车床\", \"1号车床\", \"一号车床\"], \"location\": \"A车间1号工位\", \"asset_type\": \"lathe\", \"team_ids\": [\"T-MECH\", \"T-ELEC\", \"T-CTRL\"]}], \"count\": 1, \"candidates\": [], \"requested_ids\": [\"EQ-001\"], \"evidence\": [], \"needs_clarification\": false}",
+            "status": "ok",
+            "rejection_code": null
+          },
+          {
+            "seq": 27,
+            "created_at": "2026-10-30T13:29:51.132388+00:00",
+            "event_type": "model_call",
+            "simulated": true,
+            "status": "ok",
+            "elapsed_ms": 1326
+          },
+          {
+            "seq": 28,
+            "created_at": "2026-10-30T13:29:51.138047+00:00",
+            "event_type": "tool_call",
+            "simulated": true,
+            "tool_name": "lookup_rules",
+            "args": {
+              "asset_id": "EQ-001",
+              "category": "mechanical",
+              "stopped": true
+            },
+            "result_summary": "{\"simulated\": true, \"rules\": [{\"rule_id\": \"R-MECH-STOP\", \"name\": \"机械故障且已停机：一级派机械班\", \"category\": \"mechanical\", \"asset_types\": [\"lathe\", \"conveyor\", \"compressor\", \"press\", \"robot\", \"pump\", \"fan\", \"furnace\", \"packaging\"], \"stopped\": true, \"priority\": \"P1\", \"team_id\": \"T-MECH\"}], \"teams\": [{\"team_id\": \"T-MECH\", \"name\": \"机械维修班组\"}, {\"team_id\": \"T-ELEC\", \"name\": \"电气维修班组\"}, {\"team_id\": \"T-CTRL\", \"name\": \"自动化班组\"}], \"count\": 1}",
+            "status": "ok",
+            "rejection_code": null
+          },
+          {
+            "seq": 29,
+            "created_at": "2026-10-30T13:29:52.536724+00:00",
+            "event_type": "model_call",
+            "simulated": true,
+            "status": "ok",
+            "elapsed_ms": 1389
+          },
+          {
+            "seq": 30,
+            "created_at": "2026-10-30T13:29:52.547409+00:00",
+            "event_type": "tool_call",
+            "simulated": true,
+            "tool_name": "propose_draft",
+            "args": {
+              "asset_id": "EQ-001",
+              "fault_summary": "EQ-001 机械轴承异响",
+              "category": "mechanical",
+              "stopped": true
+            },
+            "result_summary": "{\"draft\": {\"asset_id\": \"EQ-001\", \"fault_summary\": \"【容器真实测试：正常；模拟数据】EQ-001 机械轴承异响，已经停机\", \"stopped\": true, \"category\": \"mechanical\", \"draft_id\": \"7cbdccf73dffaf6f3b9d7f03ef50a28cff2e8de45993a9bd57c1d5cf2d575be5\", \"location\": \"A车间1号工位\", \"priority\": \"P1\", \"team_id\": \"T-MECH\", \"rule_ids\": [\"R-MECH-STOP\"]}, \"requires_confirmation\": true}",
+            "status": "ok",
+            "rejection_code": null
+          },
+          {
+            "seq": 31,
+            "created_at": "2026-10-30T13:29:52.551877+00:00",
+            "event_type": "status_change",
+            "simulated": true,
+            "previous": "running",
+            "status": "awaiting_confirmation",
+            "reason": null
+          },
+          {
+            "seq": 32,
+            "created_at": "2026-10-30T13:29:52.584821+00:00",
+            "event_type": "human_action",
+            "simulated": true,
+            "action": "confirm",
+            "draft_id": "7cbdccf73dffaf6f3b9d7f03ef50a28cff2e8de45993a9bd57c1d5cf2d575be5",
+            "status": "accepted"
+          },
+          {
+            "seq": 33,
+            "created_at": "2026-10-30T13:29:52.591224+00:00",
+            "event_type": "status_change",
+            "simulated": true,
+            "previous": "awaiting_confirmation",
+            "status": "approved"
+          },
+          {
+            "seq": 34,
+            "created_at": "2026-10-30T13:29:52.604972+00:00",
+            "event_type": "tool_call",
+            "simulated": true,
+            "tool_name": "create_work_order",
+            "args": {
+              "task_id": "1634812f706b4811a1c5fc0628c613e3",
+              "draft": {
+                "asset_id": "EQ-001",
+                "fault_summary": "【容器真实测试：正常；模拟数据】EQ-001 机械轴承异响，已经停机",
+                "stopped": true,
+                "category": "mechanical",
+                "draft_id": "7cbdccf73dffaf6f3b9d7f03ef50a28cff2e8de45993a9bd57c1d5cf2d575be5",
+                "location": "A车间1号工位",
+                "priority": "P1",
+                "team_id": "T-MECH",
+                "rule_ids": [
+                  "R-MECH-STOP"
+                ]
+              }
+            },
+            "result_summary": "{\"order_id\": \"WO-D791E4E3F144\", \"simulated\": true}",
+            "status": "ok"
+          },
+          {
+            "seq": 35,
+            "created_at": "2026-10-30T13:29:52.611755+00:00",
+            "event_type": "status_change",
+            "simulated": true,
+            "previous": "approved",
+            "status": "completed"
+          }
+        ]
+      },
+      "model_calls": 3,
+      "tool_rounds": 3,
+      "tool_rejections": 0,
+      "question_tool_calls": 0,
+      "repeated_question_texts": 0,
+      "redundant_question_attempts": 0,
+      "automatic_tool_steps": 0,
+      "six_round_exhausted": false,
+      "elapsed_seconds": 4.932
+    },
+    {
+      "scenario": "followup_confirm",
+      "input": "【容器真实测试：补充；模拟数据】EQ-004 机械轴承振动明显增大。",
+      "checks": {
+        "unapproved_no_order": true,
+        "followup_requested": true,
+        "valid_draft_reached": true,
+        "completed": true,
+        "stored_order_matches_saved_draft": true,
+        "repeat_confirmation_one_order": true,
+        "human_execution_no_model_call": true,
+        "at_most_six_rounds": true
+      },
+      "status": "passed",
+      "task_id": "c4d35e759b0345c58aa1165968032d57",
+      "initial_status": "question",
+      "followup": "已经停机。",
+      "actual": {
+        "task_id": "c4d35e759b0345c58aa1165968032d57",
+        "simulated": true,
+        "status": "completed",
+        "question": null,
+        "reason": null,
+        "draft": {
+          "asset_id": "EQ-004",
+          "fault_summary": "【容器真实测试：补充；模拟数据】EQ-004 机械轴承振动明显增大",
+          "stopped": true,
+          "category": "mechanical",
+          "draft_id": "74982fc93113dd17558873f551646d916ceb7fc8d9348625d96fe89b6bfce7a0",
+          "location": "动力站1号机位",
+          "priority": "P1",
+          "team_id": "T-MECH",
+          "rule_ids": [
+            "R-MECH-STOP"
+          ]
+        },
+        "work_order": {
+          "order_id": "WO-1020F2BA3BEA",
+          "request_key": "c4d35e759b0345c58aa1165968032d57",
+          "draft_id": "74982fc93113dd17558873f551646d916ceb7fc8d9348625d96fe89b6bfce7a0",
+          "payload": {
+            "asset_id": "EQ-004",
+            "fault_summary": "【容器真实测试：补充；模拟数据】EQ-004 机械轴承振动明显增大",
+            "stopped": true,
+            "category": "mechanical",
+            "draft_id": "74982fc93113dd17558873f551646d916ceb7fc8d9348625d96fe89b6bfce7a0",
+            "location": "动力站1号机位",
+            "priority": "P1",
+            "team_id": "T-MECH",
+            "rule_ids": [
+              "R-MECH-STOP"
+            ]
+          },
+          "created_at": "2026-10-30T13:29:57.843022+00:00",
+          "simulated": true
+        },
+        "tool_rounds": 4,
+        "model_calls": 4,
+        "facts": {
+          "identity_query": "EQ-004",
+          "fault_summary": "【容器真实测试：补充；模拟数据】EQ-004 机械轴承振动明显增大",
+          "stopped": true,
+          "stopped_conflict": false,
+          "evidence": {
+            "identity": {
+              "message": 1,
+              "quote": "【容器真实测试：补充；模拟数据】EQ-004 机械轴承振动明显增大。"
+            },
+            "fault_summary": {
+              "message": 1,
+              "quotes": [
+                "【容器真实测试：补充",
+                "模拟数据】EQ-004 机械轴承振动明显增大"
+              ]
+            },
+            "stopped": {
+              "message": 2,
+              "quote": "已经停机"
+            }
+          },
+          "user_message_count": 2
+        },
+        "missing_fields": [],
+        "rule_evidence": [
+          {
+            "rule_id": "R-MECH-STOP",
+            "name": "机械故障且已停机：一级派机械班",
+            "category": "mechanical",
+            "asset_types": [
+              "lathe",
+              "conveyor",
+              "compressor",
+              "press",
+              "robot",
+              "pump",
+              "fan",
+              "furnace",
+              "packaging"
+            ],
+            "stopped": true,
+            "priority": "P1",
+            "team_id": "T-MECH"
+          }
+        ],
+        "events": [
+          {
+            "seq": 36,
+            "created_at": "2026-10-30T13:29:52.646265+00:00",
+            "event_type": "status_change",
+            "simulated": true,
+            "previous": null,
+            "status": "running"
+          },
+          {
+            "seq": 37,
+            "created_at": "2026-10-30T13:29:52.653085+00:00",
+            "event_type": "fact_update",
+            "simulated": true,
+            "status": "ok",
+            "facts": {
+              "identity_query": "EQ-004",
+              "fault_summary": "【容器真实测试：补充；模拟数据】EQ-004 机械轴承振动明显增大",
+              "stopped": null,
+              "stopped_conflict": false,
+              "evidence": {
+                "identity": {
+                  "message": 1,
+                  "quote": "【容器真实测试：补充；模拟数据】EQ-004 机械轴承振动明显增大。"
+                },
+                "fault_summary": {
+                  "message": 1,
+                  "quotes": [
+                    "【容器真实测试：补充",
+                    "模拟数据】EQ-004 机械轴承振动明显增大"
+                  ]
+                }
+              },
+              "user_message_count": 1
+            },
+            "device_revalidation": false,
+            "rules_invalidated": true
+          },
+          {
+            "seq": 38,
+            "created_at": "2026-10-30T13:29:53.757884+00:00",
+            "event_type": "model_call",
+            "simulated": true,
+            "status": "ok",
+            "elapsed_ms": 1097
+          },
+          {
+            "seq": 39,
+            "created_at": "2026-10-30T13:29:53.764180+00:00",
+            "event_type": "tool_call",
+            "simulated": true,
+            "tool_name": "lookup_asset",
+            "args": {
+              "query": "EQ-004"
+            },
+            "result_summary": "{\"simulated\": true, \"status\": \"found\", \"reason\": \"exact_asset_id\", \"matches\": [{\"asset_id\": \"EQ-004\", \"name\": \"1号空压机\", \"aliases\": [\"空压机\", \"空气压缩机\"], \"location\": \"动力站1号机位\", \"asset_type\": \"compressor\", \"team_ids\": [\"T-MECH\", \"T-ELEC\", \"T-CTRL\"]}], \"count\": 1, \"candidates\": [], \"requested_ids\": [\"EQ-004\"], \"evidence\": [], \"needs_clarification\": false}",
+            "status": "ok",
+            "rejection_code": null
+          },
+          {
+            "seq": 40,
+            "created_at": "2026-10-30T13:29:54.984371+00:00",
+            "event_type": "model_call",
+            "simulated": true,
+            "status": "ok",
+            "elapsed_ms": 1215
+          },
+          {
+            "seq": 41,
+            "created_at": "2026-10-30T13:29:54.999671+00:00",
+            "event_type": "tool_call",
+            "simulated": true,
+            "tool_name": "ask_user",
+            "args": {
+              "question": "请确认设备是否停机？"
+            },
+            "result_summary": "{\"question\": \"请补充或澄清：当前是否停机。\", \"requested_question\": \"请确认设备是否停机？\", \"missing_fields\": [\"stopped\"]}",
+            "status": "ok",
+            "rejection_code": null
+          },
+          {
+            "seq": 42,
+            "created_at": "2026-10-30T13:29:55.004571+00:00",
+            "event_type": "status_change",
+            "simulated": true,
+            "previous": "running",
+            "status": "question",
+            "reason": null
+          },
+          {
+            "seq": 43,
+            "created_at": "2026-10-30T13:29:55.030100+00:00",
+            "event_type": "human_action",
+            "simulated": true,
+            "action": "provide_info",
+            "draft_id": null,
+            "status": "accepted"
+          },
+          {
+            "seq": 44,
+            "created_at": "2026-10-30T13:29:55.035188+00:00",
+            "event_type": "status_change",
+            "simulated": true,
+            "previous": "question",
+            "status": "running"
+          },
+          {
+            "seq": 45,
+            "created_at": "2026-10-30T13:29:55.040715+00:00",
+            "event_type": "fact_update",
+            "simulated": true,
+            "status": "ok",
+            "facts": {
+              "identity_query": "EQ-004",
+              "fault_summary": "【容器真实测试：补充；模拟数据】EQ-004 机械轴承振动明显增大",
+              "stopped": true,
+              "stopped_conflict": false,
+              "evidence": {
+                "identity": {
+                  "message": 1,
+                  "quote": "【容器真实测试：补充；模拟数据】EQ-004 机械轴承振动明显增大。"
+                },
+                "fault_summary": {
+                  "message": 1,
+                  "quotes": [
+                    "【容器真实测试：补充",
+                    "模拟数据】EQ-004 机械轴承振动明显增大"
+                  ]
+                },
+                "stopped": {
+                  "message": 2,
+                  "quote": "已经停机"
+                }
+              },
+              "user_message_count": 2
+            },
+            "device_revalidation": false,
+            "rules_invalidated": true
+          },
+          {
+            "seq": 46,
+            "created_at": "2026-10-30T13:29:56.200580+00:00",
+            "event_type": "model_call",
+            "simulated": true,
+            "status": "ok",
+            "elapsed_ms": 1155
+          },
+          {
+            "seq": 47,
+            "created_at": "2026-10-30T13:29:56.206566+00:00",
+            "event_type": "tool_call",
+            "simulated": true,
+            "tool_name": "lookup_rules",
+            "args": {
+              "asset_id": "EQ-004",
+              "category": "mechanical",
+              "stopped": true
+            },
+            "result_summary": "{\"simulated\": true, \"rules\": [{\"rule_id\": \"R-MECH-STOP\", \"name\": \"机械故障且已停机：一级派机械班\", \"category\": \"mechanical\", \"asset_types\": [\"lathe\", \"conveyor\", \"compressor\", \"press\", \"robot\", \"pump\", \"fan\", \"furnace\", \"packaging\"], \"stopped\": true, \"priority\": \"P1\", \"team_id\": \"T-MECH\"}], \"teams\": [{\"team_id\": \"T-MECH\", \"name\": \"机械维修班组\"}, {\"team_id\": \"T-ELEC\", \"name\": \"电气维修班组\"}, {\"team_id\": \"T-CTRL\", \"name\": \"自动化班组\"}], \"count\": 1}",
+            "status": "ok",
+            "rejection_code": null
+          },
+          {
+            "seq": 48,
+            "created_at": "2026-10-30T13:29:57.777333+00:00",
+            "event_type": "model_call",
+            "simulated": true,
+            "status": "ok",
+            "elapsed_ms": 1561
+          },
+          {
+            "seq": 49,
+            "created_at": "2026-10-30T13:29:57.791240+00:00",
+            "event_type": "tool_call",
+            "simulated": true,
+            "tool_name": "propose_draft",
+            "args": {
+              "asset_id": "EQ-004",
+              "fault_summary": "EQ-004 机械轴承振动明显增大",
+              "category": "mechanical",
+              "stopped": true
+            },
+            "result_summary": "{\"draft\": {\"asset_id\": \"EQ-004\", \"fault_summary\": \"【容器真实测试：补充；模拟数据】EQ-004 机械轴承振动明显增大\", \"stopped\": true, \"category\": \"mechanical\", \"draft_id\": \"74982fc93113dd17558873f551646d916ceb7fc8d9348625d96fe89b6bfce7a0\", \"location\": \"动力站1号机位\", \"priority\": \"P1\", \"team_id\": \"T-MECH\", \"rule_ids\": [\"R-MECH-STOP\"]}, \"requires_confirmation\": true}",
+            "status": "ok",
+            "rejection_code": null
+          },
+          {
+            "seq": 50,
+            "created_at": "2026-10-30T13:29:57.797753+00:00",
+            "event_type": "status_change",
+            "simulated": true,
+            "previous": "running",
+            "status": "awaiting_confirmation",
+            "reason": null
+          },
+          {
+            "seq": 51,
+            "created_at": "2026-10-30T13:29:57.827445+00:00",
+            "event_type": "human_action",
+            "simulated": true,
+            "action": "confirm",
+            "draft_id": "74982fc93113dd17558873f551646d916ceb7fc8d9348625d96fe89b6bfce7a0",
+            "status": "accepted"
+          },
+          {
+            "seq": 52,
+            "created_at": "2026-10-30T13:29:57.833825+00:00",
+            "event_type": "status_change",
+            "simulated": true,
+            "previous": "awaiting_confirmation",
+            "status": "approved"
+          },
+          {
+            "seq": 53,
+            "created_at": "2026-10-30T13:29:57.851100+00:00",
+            "event_type": "tool_call",
+            "simulated": true,
+            "tool_name": "create_work_order",
+            "args": {
+              "task_id": "c4d35e759b0345c58aa1165968032d57",
+              "draft": {
+                "asset_id": "EQ-004",
+                "fault_summary": "【容器真实测试：补充；模拟数据】EQ-004 机械轴承振动明显增大",
+                "stopped": true,
+                "category": "mechanical",
+                "draft_id": "74982fc93113dd17558873f551646d916ceb7fc8d9348625d96fe89b6bfce7a0",
+                "location": "动力站1号机位",
+                "priority": "P1",
+                "team_id": "T-MECH",
+                "rule_ids": [
+                  "R-MECH-STOP"
+                ]
+              }
+            },
+            "result_summary": "{\"order_id\": \"WO-1020F2BA3BEA\", \"simulated\": true}",
+            "status": "ok"
+          },
+          {
+            "seq": 54,
+            "created_at": "2026-10-30T13:29:57.857562+00:00",
+            "event_type": "status_change",
+            "simulated": true,
+            "previous": "approved",
+            "status": "completed"
+          }
+        ]
+      },
+      "model_calls": 4,
+      "tool_rounds": 4,
+      "tool_rejections": 0,
+      "question_tool_calls": 1,
+      "repeated_question_texts": 0,
+      "redundant_question_attempts": 0,
+      "automatic_tool_steps": 0,
+      "six_round_exhausted": false,
+      "elapsed_seconds": 5.243
+    },
+    {
+      "scenario": "cancel",
+      "input": "【容器真实测试：取消；模拟数据】EQ-005 电机电气保护跳闸，已经停机。",
+      "checks": {
+        "unapproved_no_order": true,
+        "valid_draft_reached": true,
+        "cancelled": true,
+        "cancel_no_order": true,
+        "human_execution_no_model_call": true,
+        "at_most_six_rounds": true
+      },
+      "status": "passed",
+      "task_id": "e99a79b52c004941a446bff384067a4b",
+      "initial_status": "awaiting_confirmation",
+      "actual": {
+        "task_id": "e99a79b52c004941a446bff384067a4b",
+        "simulated": true,
+        "status": "cancelled",
+        "question": null,
+        "reason": null,
+        "draft": {
+          "asset_id": "EQ-005",
+          "fault_summary": "【容器真实测试：取消；模拟数据】EQ-005 电机电气保护跳闸，已经停机",
+          "stopped": true,
+          "category": "electrical",
+          "draft_id": "a066d57920151d896f62199cd72c3ae6d82df530fe585641cbd43b880dd209c6",
+          "location": "B车间冲压区",
+          "priority": "P1",
+          "team_id": "T-ELEC",
+          "rule_ids": [
+            "R-ELEC-STOP"
+          ]
+        },
+        "work_order": null,
+        "tool_rounds": 3,
+        "model_calls": 3,
+        "facts": {
+          "identity_query": "EQ-005",
+          "fault_summary": "【容器真实测试：取消；模拟数据】EQ-005 电机电气保护跳闸，已经停机",
+          "stopped": true,
+          "stopped_conflict": false,
+          "evidence": {
+            "identity": {
+              "message": 1,
+              "quote": "【容器真实测试：取消；模拟数据】EQ-005 电机电气保护跳闸，已经停机。"
+            },
+            "stopped": {
+              "message": 1,
+              "quote": "已经停机"
+            },
+            "fault_summary": {
+              "message": 1,
+              "quotes": [
+                "【容器真实测试：取消",
+                "模拟数据】EQ-005 电机电气保护跳闸，已经停机"
+              ]
+            }
+          },
+          "user_message_count": 1
+        },
+        "missing_fields": [],
+        "rule_evidence": [
+          {
+            "rule_id": "R-ELEC-STOP",
+            "name": "电气故障且已停机：一级派电气班",
+            "category": "electrical",
+            "asset_types": [
+              "lathe",
+              "conveyor",
+              "compressor",
+              "press",
+              "robot",
+              "pump",
+              "fan",
+              "furnace",
+              "packaging"
+            ],
+            "stopped": true,
+            "priority": "P1",
+            "team_id": "T-ELEC"
+          }
+        ],
+        "events": [
+          {
+            "seq": 55,
+            "created_at": "2026-10-30T13:29:57.894121+00:00",
+            "event_type": "status_change",
+            "simulated": true,
+            "previous": null,
+            "status": "running"
+          },
+          {
+            "seq": 56,
+            "created_at": "2026-10-30T13:29:57.901602+00:00",
+            "event_type": "fact_update",
+            "simulated": true,
+            "status": "ok",
+            "facts": {
+              "identity_query": "EQ-005",
+              "fault_summary": "【容器真实测试：取消；模拟数据】EQ-005 电机电气保护跳闸，已经停机",
+              "stopped": true,
+              "stopped_conflict": false,
+              "evidence": {
+                "identity": {
+                  "message": 1,
+                  "quote": "【容器真实测试：取消；模拟数据】EQ-005 电机电气保护跳闸，已经停机。"
+                },
+                "stopped": {
+                  "message": 1,
+                  "quote": "已经停机"
+                },
+                "fault_summary": {
+                  "message": 1,
+                  "quotes": [
+                    "【容器真实测试：取消",
+                    "模拟数据】EQ-005 电机电气保护跳闸，已经停机"
+                  ]
+                }
+              },
+              "user_message_count": 1
+            },
+            "device_revalidation": false,
+            "rules_invalidated": true
+          },
+          {
+            "seq": 57,
+            "created_at": "2026-10-30T13:29:58.955904+00:00",
+            "event_type": "model_call",
+            "simulated": true,
+            "status": "ok",
+            "elapsed_ms": 1046
+          },
+          {
+            "seq": 58,
+            "created_at": "2026-10-30T13:29:58.970397+00:00",
+            "event_type": "tool_call",
+            "simulated": true,
+            "tool_name": "lookup_asset",
+            "args": {
+              "query": "EQ-005"
+            },
+            "result_summary": "{\"simulated\": true, \"status\": \"found\", \"reason\": \"exact_asset_id\", \"matches\": [{\"asset_id\": \"EQ-005\", \"name\": \"1号冲压机\", \"aliases\": [\"冲压机\", \"冲床\"], \"location\": \"B车间冲压区\", \"asset_type\": \"press\", \"team_ids\": [\"T-MECH\", \"T-ELEC\", \"T-CTRL\"]}], \"count\": 1, \"candidates\": [], \"requested_ids\": [\"EQ-005\"], \"evidence\": [], \"needs_clarification\": false}",
+            "status": "ok",
+            "rejection_code": null
+          },
+          {
+            "seq": 59,
+            "created_at": "2026-10-30T13:30:00.182679+00:00",
+            "event_type": "model_call",
+            "simulated": true,
+            "status": "ok",
+            "elapsed_ms": 1203
+          },
+          {
+            "seq": 60,
+            "created_at": "2026-10-30T13:30:00.188982+00:00",
+            "event_type": "tool_call",
+            "simulated": true,
+            "tool_name": "lookup_rules",
+            "args": {
+              "asset_id": "EQ-005",
+              "category": "electrical",
+              "stopped": true
+            },
+            "result_summary": "{\"simulated\": true, \"rules\": [{\"rule_id\": \"R-ELEC-STOP\", \"name\": \"电气故障且已停机：一级派电气班\", \"category\": \"electrical\", \"asset_types\": [\"lathe\", \"conveyor\", \"compressor\", \"press\", \"robot\", \"pump\", \"fan\", \"furnace\", \"packaging\"], \"stopped\": true, \"priority\": \"P1\", \"team_id\": \"T-ELEC\"}], \"teams\": [{\"team_id\": \"T-MECH\", \"name\": \"机械维修班组\"}, {\"team_id\": \"T-ELEC\", \"name\": \"电气维修班组\"}, {\"team_id\": \"T-CTRL\", \"name\": \"自动化班组\"}], \"count\": 1}",
+            "status": "ok",
+            "rejection_code": null
+          },
+          {
+            "seq": 61,
+            "created_at": "2026-10-30T13:30:02.567980+00:00",
+            "event_type": "model_call",
+            "simulated": true,
+            "status": "ok",
+            "elapsed_ms": 2370
+          },
+          {
+            "seq": 62,
+            "created_at": "2026-10-30T13:30:02.578760+00:00",
+            "event_type": "tool_call",
+            "simulated": true,
+            "tool_name": "propose_draft",
+            "args": {
+              "asset_id": "EQ-005",
+              "fault_summary": "EQ-005 电机电气保护跳闸，已经停机",
+              "category": "electrical",
+              "stopped": true
+            },
+            "result_summary": "{\"draft\": {\"asset_id\": \"EQ-005\", \"fault_summary\": \"【容器真实测试：取消；模拟数据】EQ-005 电机电气保护跳闸，已经停机\", \"stopped\": true, \"category\": \"electrical\", \"draft_id\": \"a066d57920151d896f62199cd72c3ae6d82df530fe585641cbd43b880dd209c6\", \"location\": \"B车间冲压区\", \"priority\": \"P1\", \"team_id\": \"T-ELEC\", \"rule_ids\": [\"R-ELEC-STOP\"]}, \"requires_confirmation\": true}",
+            "status": "ok",
+            "rejection_code": null
+          },
+          {
+            "seq": 63,
+            "created_at": "2026-10-30T13:30:02.586559+00:00",
+            "event_type": "status_change",
+            "simulated": true,
+            "previous": "running",
+            "status": "awaiting_confirmation",
+            "reason": null
+          },
+          {
+            "seq": 64,
+            "created_at": "2026-10-30T13:30:02.618370+00:00",
+            "event_type": "human_action",
+            "simulated": true,
+            "action": "cancel",
+            "draft_id": null,
+            "status": "accepted"
+          },
+          {
+            "seq": 65,
+            "created_at": "2026-10-30T13:30:02.624938+00:00",
+            "event_type": "status_change",
+            "simulated": true,
+            "previous": "awaiting_confirmation",
+            "status": "cancelled"
+          }
+        ]
+      },
+      "model_calls": 3,
+      "tool_rounds": 3,
+      "tool_rejections": 0,
+      "question_tool_calls": 0,
+      "repeated_question_texts": 0,
+      "redundant_question_attempts": 0,
+      "automatic_tool_steps": 0,
+      "six_round_exhausted": false,
+      "elapsed_seconds": 4.76
+    }
+  ],
+  "preexisting_before": {
+    "rows": {
+      "3705a8a6bc1f4146ad5ffa63ba537f6e": {
+        "checkpoint.checkpoints": {
+          "rows": 9,
+          "sha256": "4a2f60722202749abb1fc2911337c5a916c36a3985ec2e7a4b8c45ee8a270f22"
+        },
+        "checkpoint.writes": {
+          "rows": 45,
+          "sha256": "367805b5410c1eb705fcbb9d419043184edf2702b87e3c036cb7f3911e8de3fa"
+        },
+        "drafts": {
+          "rows": 1,
+          "sha256": "684849cd2f16caccfafea191eb13bb5b90e25a991baf6cf6adc07448ce44e6d1"
+        },
+        "events": {
+          "rows": 10,
+          "sha256": "f8dcff6b1ac4acb3707504b27b30b02393bacb5b9b94e63272ea7b38f4905b57"
+        },
+        "tasks": {
+          "rows": 1,
+          "sha256": "010c20e04b70625cec5484089111e6ee3e02023995b77b039a1deaa136cafa46"
+        },
+        "work_orders": {
+          "rows": 0,
+          "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        }
+      },
+      "abd6f614ec1444a69b734b852fbd3b50": {
+        "checkpoint.checkpoints": {
+          "rows": 10,
+          "sha256": "5b98f06eb495298a8fbeb16c2f0c12ecff1c87971af15955c460155868e01e52"
+        },
+        "checkpoint.writes": {
+          "rows": 48,
+          "sha256": "3a4cfd0d15811f5872c41c1e78a0d72b220b4a4d813cb387ab789956b57a5a28"
+        },
+        "drafts": {
+          "rows": 1,
+          "sha256": "7378828ae9c93d363aa477fb34b4f111957c2bdd0c633b71c6944693a31a50a9"
+        },
+        "events": {
+          "rows": 12,
+          "sha256": "ff71dab6d1f82ebdf096334644893a351c7f6816bc607b40a3140b25205ecc5a"
+        },
+        "tasks": {
+          "rows": 1,
+          "sha256": "1634cfe4a4fca2288285bdd0866b1f449e6f8ef12c2322c4c91c4c7f82a44932"
+        },
+        "work_orders": {
+          "rows": 1,
+          "sha256": "075d7a5b9e005b7cabd4dd5142477f91188d5f4a3f6abb900b3143be4499b1cf"
+        }
+      }
+    },
+    "task_ids": [
+      "3705a8a6bc1f4146ad5ffa63ba537f6e",
+      "abd6f614ec1444a69b734b852fbd3b50"
+    ]
+  },
+  "api_model_configured": true,
+  "preexisting_after": {
+    "rows": {
+      "3705a8a6bc1f4146ad5ffa63ba537f6e": {
+        "checkpoint.checkpoints": {
+          "rows": 9,
+          "sha256": "4a2f60722202749abb1fc2911337c5a916c36a3985ec2e7a4b8c45ee8a270f22"
+        },
+        "checkpoint.writes": {
+          "rows": 45,
+          "sha256": "367805b5410c1eb705fcbb9d419043184edf2702b87e3c036cb7f3911e8de3fa"
+        },
+        "drafts": {
+          "rows": 1,
+          "sha256": "684849cd2f16caccfafea191eb13bb5b90e25a991baf6cf6adc07448ce44e6d1"
+        },
+        "events": {
+          "rows": 10,
+          "sha256": "f8dcff6b1ac4acb3707504b27b30b02393bacb5b9b94e63272ea7b38f4905b57"
+        },
+        "tasks": {
+          "rows": 1,
+          "sha256": "010c20e04b70625cec5484089111e6ee3e02023995b77b039a1deaa136cafa46"
+        },
+        "work_orders": {
+          "rows": 0,
+          "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        }
+      },
+      "abd6f614ec1444a69b734b852fbd3b50": {
+        "checkpoint.checkpoints": {
+          "rows": 10,
+          "sha256": "5b98f06eb495298a8fbeb16c2f0c12ecff1c87971af15955c460155868e01e52"
+        },
+        "checkpoint.writes": {
+          "rows": 48,
+          "sha256": "3a4cfd0d15811f5872c41c1e78a0d72b220b4a4d813cb387ab789956b57a5a28"
+        },
+        "drafts": {
+          "rows": 1,
+          "sha256": "7378828ae9c93d363aa477fb34b4f111957c2bdd0c633b71c6944693a31a50a9"
+        },
+        "events": {
+          "rows": 12,
+          "sha256": "ff71dab6d1f82ebdf096334644893a351c7f6816bc607b40a3140b25205ecc5a"
+        },
+        "tasks": {
+          "rows": 1,
+          "sha256": "1634cfe4a4fca2288285bdd0866b1f449e6f8ef12c2322c4c91c4c7f82a44932"
+        },
+        "work_orders": {
+          "rows": 1,
+          "sha256": "075d7a5b9e005b7cabd4dd5142477f91188d5f4a3f6abb900b3143be4499b1cf"
+        }
+      }
+    },
+    "task_ids": [
+      "3705a8a6bc1f4146ad5ffa63ba537f6e",
+      "abd6f614ec1444a69b734b852fbd3b50"
+    ]
+  },
+  "preexisting_task_ids": [
+    "3705a8a6bc1f4146ad5ffa63ba537f6e",
+    "abd6f614ec1444a69b734b852fbd3b50"
+  ],
+  "preexisting_rows_unchanged": true,
+  "summary": {
+    "passed": 3,
+    "failed": 0,
+    "model_calls": 10,
+    "tool_rejections": 0,
+    "six_round_exhaustions": 0,
+    "elapsed_seconds": 16.444
+  }
+}

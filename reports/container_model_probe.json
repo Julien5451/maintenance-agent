@@ -1,0 +1,15 @@
+{
+  "timestamp": "2026-10-30T12:18:31.840039+00:00",
+  "kind": "running_container_model_probe",
+  "simulated_business_data": true,
+  "model_calls": 1,
+  "database_writes": 0,
+  "status": "failed",
+  "diagnostic": {
+    "category": "network",
+    "reason": "无法连接模型服务，请检查网络、代理、DNS 与 TLS。",
+    "error_type": "OpenAIConnectionError",
+    "network_subtype": "connection"
+  },
+  "elapsed_seconds": 45.314
+}

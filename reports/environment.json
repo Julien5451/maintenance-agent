@@ -1,0 +1,31 @@
+{
+  "checked_date": "2026-10-30",
+  "timezone": "Asia/Shanghai",
+  "project_directory": "C:/Users/LENOVO/Desktop/project2/maintenance-agent",
+  "initial_workspace": "empty; no AGENTS.md found in workspace or ancestor paths checked",
+  "runtime": "WSL2 Ubuntu 26.04 LTS",
+  "python": "3.12.14",
+  "host_uv": "0.12.18",
+  "container_python": "3.12.16",
+  "container_uv": "0.13.6",
+  "docker_engine": "29.1.3",
+  "docker_compose": "2.40.3",
+  "packages": {
+    "langgraph": "1.2.18",
+    "langgraph-checkpoint-sqlite": "3.1.2",
+    "langchain-openai": "1.7.3",
+    "pydantic": "2.14.2",
+    "fastapi": "0.162.0",
+    "streamlit": "1.66.1"
+  },
+  "model_configuration_found_at_initial_check": false,
+  "model_configuration_present_after_authorized_migration": true,
+  "windows_to_container_localhost_health_verified": true,
+  "secrets_printed": false,
+  "frozen_cases_sha256": "4de390acedbff199adc717f76e35e93915323971b8698b1185126e82afa6d849",
+  "initial_docker_build": {
+    "status": "failed",
+    "reason": "Docker Hub registry connection timed out while resolving python:3.12-slim",
+    "followup": "Use official Astral GHCR derived Python 3.12 image"
+  }
+}

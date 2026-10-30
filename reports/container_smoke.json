@@ -1,0 +1,22 @@
+{
+  "timestamp": "2026-10-30T11:17:58.225115+00:00",
+  "kind": "local_container_smoke",
+  "model_mode": "scripted_mock",
+  "real_model_evaluation": false,
+  "simulated": true,
+  "checks": {
+    "api_health": true,
+    "ui_health": true,
+    "unapproved_no_order": true,
+    "pending_visible_over_http": true,
+    "restart_recovers_identical_draft": true,
+    "confirmed_completed": true,
+    "confirmation_does_not_call_model": true,
+    "duplicate_confirmation_one_order": true,
+    "stored_order_equals_approved_draft": true,
+    "cancel_no_order": true
+  },
+  "task_id": "abd6f614ec1444a69b734b852fbd3b50",
+  "work_order_id": "WO-A267BEF81EF5",
+  "status": "passed"
+}

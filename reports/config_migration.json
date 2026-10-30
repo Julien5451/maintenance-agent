@@ -1,0 +1,12 @@
+{
+  "timestamp": "2026-10-30T12:08:36.025838+00:00",
+  "status": "passed",
+  "mapping": {
+    "CHAT_MODEL": "LLM_MODEL",
+    "CHAT_BASE_URL": "LLM_BASE_URL",
+    "CHAT_API_KEY": "LLM_API_KEY"
+  },
+  "other_settings_unchanged": true,
+  "source_file_unchanged": true,
+  "mapped_values_verified": true
+}

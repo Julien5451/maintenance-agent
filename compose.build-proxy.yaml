@@ -1,0 +1,6 @@
+# Optional local build override: allows the existing host proxy to be used during RUN.
+# No proxy value or model credential is stored in this file or Dockerfile.
+services:
+  api:
+    build:
+      network: host

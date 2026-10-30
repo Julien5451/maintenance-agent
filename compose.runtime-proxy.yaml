@@ -1,0 +1,18 @@
+# Optional runtime route to the existing host proxy through a project-only relay.
+# Set MAINTENANCE_PROXY_GATEWAY from scripts/runtime_proxy.py --inspect.
+# No host proxy value, model credential or proxy credential is stored here.
+services:
+  api:
+    extra_hosts:
+      - "maintenance-proxy.host:${MAINTENANCE_PROXY_GATEWAY:?Set the project bridge gateway first}"
+    environment:
+      HTTP_PROXY: http://maintenance-proxy.host:18081
+      HTTPS_PROXY: http://maintenance-proxy.host:18081
+      http_proxy: http://maintenance-proxy.host:18081
+      https_proxy: http://maintenance-proxy.host:18081
+      NO_PROXY: localhost,127.0.0.1,::1,api,ui,maintenance-proxy.host
+      no_proxy: localhost,127.0.0.1,::1,api,ui,maintenance-proxy.host
+  ui:
+    environment:
+      NO_PROXY: localhost,127.0.0.1,::1,api,ui
+      no_proxy: localhost,127.0.0.1,::1,api,ui

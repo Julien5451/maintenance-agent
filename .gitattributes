@@ -1,0 +1,3 @@
+# Preserve frozen cases and recorded evidence byte-for-byte across Windows/WSL.
+/evals/*.json -text
+/reports/** -text

@@ -1,0 +1,30 @@
+services:
+  api:
+    build: .
+    image: maintenance-agent:local
+    env_file: .env
+    environment:
+      DATABASE_DIR: /app/runtime
+    ports:
+      - "127.0.0.1:8000:8000"
+    volumes:
+      - maintenance-data:/app/runtime
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://127.0.0.1:8000/health', timeout=5)"]
+      interval: 15s
+      timeout: 5s
+      retries: 5
+      start_period: 15s
+  ui:
+    image: maintenance-agent:local
+    environment:
+      API_BASE_URL: http://api:8000
+    command: ["streamlit", "run", "src/maintenance_agent/ui.py", "--server.address=0.0.0.0", "--server.port=8501", "--browser.gatherUsageStats=false"]
+    ports:
+      - "127.0.0.1:8501:8501"
+    depends_on:
+      api:
+        condition: service_healthy
+
+volumes:
+  maintenance-data:

@@ -1,0 +1,8 @@
+[
+  {"rule_id":"R-MECH-STOP","name":"机械故障且已停机：一级派机械班","category":"mechanical","asset_types":["lathe","conveyor","compressor","press","robot","pump","fan","furnace","packaging"],"stopped":true,"priority":"P1","team_id":"T-MECH"},
+  {"rule_id":"R-MECH-RUN","name":"机械故障且未停机：二级派机械班","category":"mechanical","asset_types":["lathe","conveyor","compressor","press","robot","pump","fan","furnace","packaging"],"stopped":false,"priority":"P2","team_id":"T-MECH"},
+  {"rule_id":"R-ELEC-STOP","name":"电气故障且已停机：一级派电气班","category":"electrical","asset_types":["lathe","conveyor","compressor","press","robot","pump","fan","furnace","packaging"],"stopped":true,"priority":"P1","team_id":"T-ELEC"},
+  {"rule_id":"R-ELEC-RUN","name":"电气故障且未停机：二级派电气班","category":"electrical","asset_types":["lathe","conveyor","compressor","press","robot","pump","fan","furnace","packaging"],"stopped":false,"priority":"P2","team_id":"T-ELEC"},
+  {"rule_id":"R-CTRL-STOP","name":"控制故障且已停机：一级派自动化班","category":"control","asset_types":["lathe","conveyor","compressor","press","robot","pump","fan","furnace","packaging"],"stopped":true,"priority":"P1","team_id":"T-CTRL"},
+  {"rule_id":"R-CTRL-RUN","name":"控制故障且未停机：三级派自动化班","category":"control","asset_types":["lathe","conveyor","compressor","press","robot","pump","fan","furnace","packaging"],"stopped":false,"priority":"P3","team_id":"T-CTRL"}
+]
